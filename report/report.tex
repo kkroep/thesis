@@ -1,0 +1,90 @@
+\documentclass[]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{graphicx}
+\usepackage{tikz, amsmath, amssymb, bm, color}
+\usepackage{geometry}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes,arrows}
+\usepackage{todonotes}
+\usepackage[american]{circuitikz}
+\usepackage{pgfplots}
+\usepackage{epstopdf}
+\usepackage{listings}
+%\usepackage{blochsphere}
+\usepackage{datetime}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{cleveref}
+
+\newenvironment{custom_itemize}{
+\begin{itemize}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+
+
+%\usepackage{multicol} % Used for the two-column layout of the document
+
+
+%\usepackage{bm}
+
+
+\title{Report Thesis}
+\author{Kees Kroep 4246373}
+
+
+\begin{document}
+
+%  \twocolumn[{%% \begin{@twocolumnfalse}
+  \maketitle
+%   \end{@twocolumnfalse}
+% }]
+
+\newdate{M1}{25}{04}{2017}
+\newdate{M2}{2}{05}{2017}
+\newdate{M3}{9}{05}{2017}
+\newdate{M4}{23}{05}{2017}
+\newdate{M5}{30}{05}{2017}
+\newdate{M6}{04}{07}{2017}
+\newdate{M7}{18}{07}{2017}
+
+
+\section{Milestones}
+
+\textit{\date{\displaydate{M1}}}\\
+\textbf{Installing and setup of hardware/software}\\
+Set-up cadence with the TSMC40 nm tools. Set-up liberty, and calculate the files for a single library component.
+I should familiarize myself with the design tools, partially helped by Alex to kickstart me.\\
+\\
+\textit{\date{\displaydate{M2}}}\\
+\textbf{Running liberty through a subset of desired components and settings}\\
+Depending on how automized the process is, this part should be easy but time consuming \\
+\\
+\textit{\date{\displaydate{M3}}}\\
+\textbf{Analyze the first subset for performance translation}\\
+Analyze the consistency of performance changes for different components, and try to spot trends. This can also be backed up by a literature study and some math. While doing this continue to calculate the remaining components in liberty\\
+\\
+\textit{\date{\displaydate{M4}}}\\
+\textbf{Finish up analysis of entire set and present findings}\\
+Go through the entire set where deemed necessary and draw conclusions. Based on findings construct presentation to present observations and design recommendations to discuss with coolgroup\\
+\\
+\textit{\date{\displaydate{M5}}}\\
+\textbf{Implement feedback in analysis where required}\\
+Depending on how well the work went, this should take a smaller time\\
+\\
+\textit{\date{\displaydate{M6}}}\\
+\textbf{Design a test IC (schematic), to verify library}\\
+Design a digital IC component to test out the new library. This component could somewhere between a fucntional system or a ring oscillator farm.\\
+\\
+\textit{\date{\displaydate{M7}}}\\
+\textbf{Design a test IC (layout)}\\
+Make the layout for the test IC. 
+\\
+\textit{Future}\\
+\textbf{Make components for the QC}\\
+Make components for the qunatum computer where required while making use of my own library and the recommendations accompanying it.
+
+
+
+\end{document}
